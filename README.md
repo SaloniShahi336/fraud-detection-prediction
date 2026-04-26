@@ -81,9 +81,13 @@ jupyter notebook notebooks/fraud_detection_modeling.ipynb
 ```
 
 **Folder structure:**
+
 ├── data/               # Raw and processed datasets
+
 ├── notebooks/          # Modeling notebook
+
 ├── src/                # Pipeline scripts
+
 └── requirements.txt
 
 > **Data source:** [IEEE-CIS Fraud Detection — Kaggle](https://www.kaggle.com/c/ieee-fraud-detection/data)
