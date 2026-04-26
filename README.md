@@ -62,7 +62,7 @@ Key questions:
 
 ## 🖼️ Screenshots / Visuals
 
-> *(Add here: ROC curve, confusion matrix, feature importance chart, fraud rate by severity tier)*
+
 
 ---
 
