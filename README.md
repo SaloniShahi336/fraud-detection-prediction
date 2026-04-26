@@ -29,7 +29,7 @@ Key questions:
 
 | Attribute | Detail |
 |---|---|
-| Dataset | IEEE-CIS Fraud Detection (Kaggle) |
+| Dataset | IEEE-CIS Fraud Detection (Kaggle) | https://www.kaggle.com/c/ieee-fraud-detection/data
 | Total transactions | 590,000+ |
 | Fraud rate | ~3.5% (heavily imbalanced) |
 | Key fields | Transaction amount, card type, device, email domain, time delta, geography |
