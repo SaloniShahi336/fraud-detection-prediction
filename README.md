@@ -29,7 +29,7 @@ Key questions:
 
 | Attribute | Detail |
 |---|---|
-| Dataset | IEEE-CIS Fraud Detection (Kaggle) | https://www.kaggle.com/c/ieee-fraud-detection/data
+| Dataset | IEEE-CIS Fraud Detection (Kaggle)| 
 | Total transactions | 590,000+ |
 | Fraud rate | ~3.5% (heavily imbalanced) |
 | Key fields | Transaction amount, card type, device, email domain, time delta, geography |
@@ -81,3 +81,18 @@ jupyter notebook notebooks/fraud_detection_modeling.ipynb
 ```
 
 **Folder structure:**
+├── data/               # Raw and processed datasets
+├── notebooks/          # Modeling notebook
+├── src/                # Pipeline scripts
+└── requirements.txt
+
+> **Data source:** [IEEE-CIS Fraud Detection — Kaggle](https://www.kaggle.com/c/ieee-fraud-detection/data)
+
+---
+
+## 💡 Learnings
+
+- SMOTE must be applied only on training data — applying it before the train/test split causes data leakage and inflates performance metrics
+- XGBoost's `scale_pos_weight` parameter is an alternative to SMOTE that's worth comparing — it handles imbalance differently and can outperform oversampling on certain distributions
+- Severity segmentation added real business value: flagging high-value fraudulent transactions first aligns model output with actual financial risk, not just accuracy scores
+- With 400+ features, feature selection matters as much as model choice — removing low-signal features improved both speed and generalization
